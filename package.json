@@ -1,16 +1,20 @@
 {
   "name": "storybook-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demo app for React components on Storybook, to be used on ZeroHeight platform",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy": "npm run build-storybook && npx http-server storybook-static/"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["storybook", "react", "js", "zero-height"],
+  "author": "Adriel Dinelli <adriel.dinelli@gmail.com>",
   "license": "ISC",
+  "engines": {
+    "node": "10.16.x"
+  },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.5.5",
